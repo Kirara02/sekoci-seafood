@@ -13,7 +13,7 @@ class OnboardingView extends StatefulWidget {
 
     return Scaffold(
       body: SafeArea(
-        child: Container(
+        child: SingleChildScrollView(
           child: Column(
             children: [
               Stack(
@@ -22,15 +22,15 @@ class OnboardingView extends StatefulWidget {
                     items: [
                       Image.asset(
                         "assets/images/onboarding1.png",
-                        fit: BoxFit.cover,
+                        // fit: BoxFit.cover,
                       ),
                       Image.asset(
                         "assets/images/onboarding2.png",
-                        fit: BoxFit.cover,
+                        // fit: BoxFit.cover,
                       ),
                       Image.asset(
                         "assets/images/onboarding3.png",
-                        fit: BoxFit.cover,
+                        // fit: BoxFit.cover,
                       )
                     ],
                     options: CarouselOptions(
@@ -41,7 +41,6 @@ class OnboardingView extends StatefulWidget {
                         controller.setState(() {
                           controller.currentIndex = index;
                         });
-                        print(controller.currentIndex);
                       },
                     ),
                     carouselController: controller.carouselController,
@@ -145,7 +144,7 @@ class OnboardingView extends StatefulWidget {
                               InkWell(
                                 onTap: () {
                                   if (controller.currentIndex == 2) {
-                                    print('object');
+                                    Get.offAll(const LoginView());
                                   }
                                 },
                                 child: Padding(

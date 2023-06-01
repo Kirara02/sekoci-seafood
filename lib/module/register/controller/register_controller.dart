@@ -17,4 +17,11 @@ class RegisterController extends State<RegisterView> implements MvcController {
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
+
+  TextEditingController namaController = TextEditingController(text: '');
+  TextEditingController emailController = TextEditingController(text: '');
+  TextEditingController nomorController = TextEditingController(text: '');
+  TextEditingController passwordController = TextEditingController(text: '');
+  TextEditingController ulangiController = TextEditingController(text: '');
+
 }

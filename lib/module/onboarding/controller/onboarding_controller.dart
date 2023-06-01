@@ -23,12 +23,6 @@ class OnboardingController extends State<OnboardingView>
   int currentIndex = 0;
   CarouselController carouselController = CarouselController();
 
-  List images = [
-    "assets/images/onboarding1.png",
-    "assets/images/onboarding2.png",
-    "assets/images/onboarding3.png",
-  ];
-
   List titles = [
     'Makan Seafood\nSegar Di Rumah',
     'Kami Hanya Proses\nDari Pesanan',
