@@ -100,40 +100,55 @@ class OnboardingView extends StatefulWidget {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Container(
-                                    width:
-                                        controller.currentIndex == 0 ? 24 : 12,
-                                    height: 12,
-                                    margin: const EdgeInsets.only(right: 6),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      color: controller.currentIndex == 0
-                                          ? secondaryColor
-                                          : greyColor,
+                                  GestureDetector(
+                                    onTap: () => controller.carouselController
+                                        .animateToPage(0),
+                                    child: Container(
+                                      width: controller.currentIndex == 0
+                                          ? 24
+                                          : 12,
+                                      height: 12,
+                                      margin: const EdgeInsets.only(right: 6),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: controller.currentIndex == 0
+                                            ? secondaryColor
+                                            : greyColor,
+                                      ),
                                     ),
                                   ),
-                                  Container(
-                                    width:
-                                        controller.currentIndex == 1 ? 24 : 12,
-                                    height: 12,
-                                    margin: const EdgeInsets.only(right: 6),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      color: controller.currentIndex == 1
-                                          ? secondaryColor
-                                          : greyColor,
+                                  GestureDetector(
+                                    onTap: () => controller.carouselController
+                                        .animateToPage(1),
+                                    child: Container(
+                                      width: controller.currentIndex == 1
+                                          ? 24
+                                          : 12,
+                                      height: 12,
+                                      margin: const EdgeInsets.only(right: 6),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: controller.currentIndex == 1
+                                            ? secondaryColor
+                                            : greyColor,
+                                      ),
                                     ),
                                   ),
-                                  Container(
-                                    width:
-                                        controller.currentIndex == 2 ? 24 : 12,
-                                    height: 12,
-                                    margin: const EdgeInsets.only(right: 6),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      color: controller.currentIndex == 2
-                                          ? secondaryColor
-                                          : greyColor,
+                                  GestureDetector(
+                                    onTap: () => controller.carouselController
+                                        .animateToPage(2),
+                                    child: Container(
+                                      width: controller.currentIndex == 2
+                                          ? 24
+                                          : 12,
+                                      height: 12,
+                                      margin: const EdgeInsets.only(right: 6),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: controller.currentIndex == 2
+                                            ? secondaryColor
+                                            : greyColor,
+                                      ),
                                     ),
                                   ),
                                 ],

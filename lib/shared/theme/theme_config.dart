@@ -7,3 +7,5 @@ const whiteColor = Color(0xffFFFFFF);
 const secondaryColor = Color(0xffFFD770);
 const greyColor = Color(0xffE7E7E7);
 const greyColor2 = Color(0xffDDDDDD);
+const greyColor3 = Color(0xffB4B4B4);
+const dicColor = Color(0xffBBBBBB);

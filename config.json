@@ -1,12 +1,14 @@
 {
-    "openai_key": "",
-    "modules": [
-        "login",
-        "home",
-        "splash_screen",
-        "onboarding",
-        "register",
-        "main_navigation",
-        "profile"
-    ]
+  "openai_key": "",
+  "modules": [
+    "login",
+    "splash_screen",
+    "onboarding",
+    "register",
+    "main_navigation",
+    "home",
+    "menu",
+    "pesanan",
+    "profile"
+  ]
 }

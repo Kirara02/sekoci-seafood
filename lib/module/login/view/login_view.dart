@@ -99,7 +99,7 @@ class LoginView extends StatefulWidget {
                   ),
                   CustomButton(
                     text: "Login",
-                    onTap: () {},
+                    onTap: () => Get.offAll(const MainNavigationView()),
                   ),
                 ],
               ),

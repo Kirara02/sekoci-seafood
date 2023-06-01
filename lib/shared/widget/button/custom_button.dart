@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-// ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
-
-import 'package:flutter/material.dart';
 import 'package:zen_test/shared/theme/theme_config.dart';
 
 class CustomButton extends StatelessWidget {
