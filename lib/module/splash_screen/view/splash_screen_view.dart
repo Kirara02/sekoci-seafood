@@ -9,13 +9,12 @@ class SplashScreenView extends StatefulWidget {
     controller.view = this;
 
     return Scaffold(
-      body: SingleChildScrollView(
+      body: Center(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children:  [
-              
-            ],
+          child: Image.asset(
+            "assets/images/sekoci_logo.png",
+            width: 250,
           ),
         ),
       ),
