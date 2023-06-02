@@ -55,6 +55,8 @@ class MainNavigationView extends StatefulWidget {
             MenusView(),
             PesananView(),
             ProfileView(),
+            FavoriteView(),
+            CartView(),
           ],
         ),
         floatingActionButton: ClipOval(
@@ -70,7 +72,6 @@ class MainNavigationView extends StatefulWidget {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         resizeToAvoidBottomInset: false,
-        
         extendBody: true,
         bottomNavigationBar: ClipRRect(
           borderRadius: const BorderRadius.vertical(
@@ -88,7 +89,6 @@ class MainNavigationView extends StatefulWidget {
               onTap: (newIndex) => controller.updateIndex(newIndex),
               type: BottomNavigationBarType.fixed,
               selectedFontSize: 12,
-              landscapeLayout: BottomNavigationBarLandscapeLayout.spread,
               items: [
                 BottomNavigationBarItem(
                   icon: Image.asset(

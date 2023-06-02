@@ -7,8 +7,11 @@
     "register",
     "main_navigation",
     "home",
-    "menu",
+    "menus",
     "pesanan",
-    "profile"
+    "profile",
+    "cart",
+    "favorite",
+    "detail_menu"
   ]
 }

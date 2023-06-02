@@ -15,6 +15,7 @@ class OnboardingView extends StatefulWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Stack(
                 children: [
@@ -22,15 +23,15 @@ class OnboardingView extends StatefulWidget {
                     items: [
                       Image.asset(
                         "assets/images/onboarding1.png",
-                        // fit: BoxFit.cover,
+                        fit: BoxFit.cover,
                       ),
                       Image.asset(
                         "assets/images/onboarding2.png",
-                        // fit: BoxFit.cover,
+                        fit: BoxFit.cover,
                       ),
                       Image.asset(
                         "assets/images/onboarding3.png",
-                        // fit: BoxFit.cover,
+                        fit: BoxFit.cover,
                       )
                     ],
                     options: CarouselOptions(
