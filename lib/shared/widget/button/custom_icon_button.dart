@@ -20,7 +20,7 @@ class CustomIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 25,
-      width: 135,
+      constraints: BoxConstraints(minWidth: 135),
       padding: const EdgeInsets.symmetric(
         horizontal: 10,
         vertical: 2,

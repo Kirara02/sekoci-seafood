@@ -228,76 +228,80 @@ class DetailMenuView extends StatefulWidget {
                     ),
                   ],
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/icons/diskon.png',
-                          width: 18,
-                          fit: BoxFit.cover,
-                          color: primaryColor,
+                child: Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Flexible(
+                        child: Row(
+                          children: [
+                            Image.asset(
+                              'assets/icons/diskon.png',
+                              width: 18,
+                              fit: BoxFit.cover,
+                              color: primaryColor,
+                            ),
+                            const SizedBox(
+                              width: 7.5,
+                            ),
+                            const Text(
+                              "Diskon 20%",
+                              style: TextStyle(
+                                fontSize: 12.0,
+                                color: primaryColor,
+                              ),
+                            ),
+                          ],
                         ),
-                        const SizedBox(
-                          width: 7.5,
-                        ),
-                        const Text(
-                          "Diskon 20%",
-                          style: TextStyle(
-                            fontSize: 12.0,
+                      ),
+                      const VerticalDivider(
+                        color: primaryColor,
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            'assets/icons/like.png',
+                            width: 18,
+                            fit: BoxFit.cover,
                             color: primaryColor,
                           ),
-                        ),
-                      ],
-                    ),
-                    const VerticalDivider(
-                      color: primaryColor,
-                    ),
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/icons/like.png',
-                          width: 18,
-                          fit: BoxFit.cover,
-                          color: primaryColor,
-                        ),
-                        const SizedBox(
-                          width: 7.5,
-                        ),
-                        const Text(
-                          "Paling Populer",
-                          style: TextStyle(
-                            fontSize: 12.0,
+                          const SizedBox(
+                            width: 7.5,
+                          ),
+                          const Text(
+                            "Paling Populer",
+                            style: TextStyle(
+                              fontSize: 12.0,
+                              color: primaryColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const VerticalDivider(
+                        color: primaryColor,
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            'assets/icons/inventory.png',
+                            width: 18,
+                            fit: BoxFit.cover,
                             color: primaryColor,
                           ),
-                        ),
-                      ],
-                    ),
-                    const VerticalDivider(
-                      color: primaryColor,
-                    ),
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/icons/inventory.png',
-                          width: 18,
-                          fit: BoxFit.cover,
-                          color: primaryColor,
-                        ),
-                        const SizedBox(
-                          width: 7.5,
-                        ),
-                        const Text(
-                          "Gratis Ongkir",
-                          style: TextStyle(
-                            fontSize: 12.0,
-                            color: primaryColor,
+                          const SizedBox(
+                            width: 7.5,
                           ),
-                        ),
-                      ],
-                    ),
-                  ],
+                          const Text(
+                            "Gratis Ongkir",
+                            style: TextStyle(
+                              fontSize: 12.0,
+                              color: primaryColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             )

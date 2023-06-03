@@ -15,10 +15,8 @@ class OnboardingView extends StatefulWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Stack(
-                fit: StackFit.passthrough,
                 children: [
                   CarouselSlider(
                     items: [
@@ -51,7 +49,7 @@ class OnboardingView extends StatefulWidget {
                     carouselController: controller.carouselController,
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.95,
+                    height: MediaQuery.of(context).size.height,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
@@ -64,7 +62,7 @@ class OnboardingView extends StatefulWidget {
                         ),
                         Container(
                           width: double.infinity,
-                          height: 300,
+                          height: MediaQuery.of(context).size.height * 0.4,
                           padding: const EdgeInsets.symmetric(vertical: 15),
                           decoration: const BoxDecoration(
                             color: whiteColor,
