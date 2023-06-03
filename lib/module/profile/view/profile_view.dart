@@ -244,7 +244,7 @@ class ProfileView extends StatefulWidget {
                   height: 25.0,
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () => Get.to(const ProfileUnauthView()),
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(

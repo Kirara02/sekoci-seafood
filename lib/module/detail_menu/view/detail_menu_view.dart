@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zen_test/core.dart';
+import 'package:zen_test/shared/widget/app_bar/custom_app_bar.dart';
 import 'package:zen_test/shared/widget/button/custom_full_button.dart';
 import '../controller/detail_menu_controller.dart';
 
@@ -25,42 +26,7 @@ class DetailMenuView extends StatefulWidget {
     controller.view = this;
 
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset(
-              "assets/images/logo.png",
-              width: 60,
-            ),
-            const SizedBox(
-              width: 5.0,
-            ),
-            Image.asset(
-              "assets/images/sekoci_text.png",
-              width: 150,
-            ),
-          ],
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Badge(
-              label: const Text(
-                "4",
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              child: Image.asset(
-                "assets/icons/cart.png",
-                width: 22,
-              ),
-            ),
-          ),
-        ],
-      ),
+      appBar: const CustomAppBar(),
       body: Container(
         child: Stack(
           children: [

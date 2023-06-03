@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zen_test/core.dart';
 import 'package:zen_test/shared/theme/theme_config.dart';
+import 'package:zen_test/shared/widget/app_bar/custom_app_bar.dart';
 import '../controller/main_navigation_controller.dart';
 
 class MainNavigationView extends StatefulWidget {
@@ -13,42 +14,7 @@ class MainNavigationView extends StatefulWidget {
       length: 4,
       initialIndex: controller.selectedIndex,
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: whiteColor,
-          title: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Image.asset(
-                "assets/images/logo.png",
-                width: 60,
-              ),
-              const SizedBox(
-                width: 5.0,
-              ),
-              Image.asset(
-                "assets/images/sekoci_text.png",
-                width: 150,
-              ),
-            ],
-          ),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Badge(
-                label: const Text(
-                  "4",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                child: Image.asset(
-                  "assets/icons/cart.png",
-                  width: 22,
-                ),
-              ),
-            ),
-          ],
-        ),
+        appBar: const CustomAppBar(),
         body: IndexedStack(
           index: controller.selectedIndex,
           children: const [
@@ -61,7 +27,7 @@ class MainNavigationView extends StatefulWidget {
         floatingActionButton: ClipOval(
           child: FloatingActionButton(
             backgroundColor: primaryColor,
-            onPressed: () {},
+            onPressed: () => Get.to(const FavoriteView()),
             child: Image.asset(
               "assets/icons/favorite.png",
               width: 24,

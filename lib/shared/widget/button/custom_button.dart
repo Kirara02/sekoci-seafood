@@ -4,11 +4,13 @@ import 'package:zen_test/shared/theme/theme_config.dart';
 class CustomButton extends StatelessWidget {
   final String text;
   final bool filled;
+  final double width;
   final VoidCallback? onTap;
   const CustomButton({
     Key? key,
     required this.text,
     this.filled = true,
+    this.width = 140,
     this.onTap,
   }) : super(key: key);
 
@@ -18,7 +20,7 @@ class CustomButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: 40,
-        width: 140,
+        width: width,
         decoration: BoxDecoration(
           color: filled == false ? whiteColor : primaryColor,
           borderRadius: BorderRadius.circular(8),
