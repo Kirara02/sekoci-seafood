@@ -19,6 +19,9 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
+        appBarTheme: AppBarTheme(
+          backgroundColor: whiteColor,
+        ),
       ),
       home: const SplashScreenView(),
     );

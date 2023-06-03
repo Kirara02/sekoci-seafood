@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zen_test/core.dart';
+import 'package:zen_test/shared/widget/button/custom_full_button.dart';
 import '../controller/detail_menu_controller.dart';
 
 class DetailMenuView extends StatefulWidget {
@@ -338,29 +339,15 @@ class DetailMenuView extends StatefulWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 68,
-        padding: const EdgeInsets.symmetric(
-          horizontal: 30,
-          vertical: 14,
-        ),
-        child: Container(
-          height: 40,
-          decoration: BoxDecoration(
-            color: primaryColor,
-            borderRadius: BorderRadius.circular(32),
+          height: 68,
+          padding: const EdgeInsets.symmetric(
+            horizontal: 30,
+            vertical: 14,
           ),
-          child: const Center(
-            child: Text(
-              "Tambah Ke Keranjang",
-              style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.bold,
-                color: whiteColor,
-              ),
-            ),
-          ),
-        ),
-      ),
+          child: CustomFullButton(
+            text: "Tambah ke Keranjang",
+            onTap: () {},
+          )),
     );
   }
 

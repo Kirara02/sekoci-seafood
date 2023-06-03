@@ -14,6 +14,7 @@ class MainNavigationView extends StatefulWidget {
       initialIndex: controller.selectedIndex,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: whiteColor,
           title: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -50,6 +51,7 @@ class MainNavigationView extends StatefulWidget {
         ),
         body: IndexedStack(
           index: controller.selectedIndex,
+          sizing: StackFit.expand,
           children: const [
             HomeView(),
             MenusView(),
@@ -73,6 +75,8 @@ class MainNavigationView extends StatefulWidget {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         resizeToAvoidBottomInset: false,
         extendBody: true,
+        extendBodyBehindAppBar: true,
+        drawerEnableOpenDragGesture: false,
         bottomNavigationBar: ClipRRect(
           borderRadius: const BorderRadius.vertical(
             top: Radius.circular(12),

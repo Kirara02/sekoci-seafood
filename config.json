@@ -1,17 +1,19 @@
 {
-  "openai_key": "",
-  "modules": [
-    "login",
-    "splash_screen",
-    "onboarding",
-    "register",
-    "main_navigation",
-    "home",
-    "menus",
-    "pesanan",
-    "profile",
-    "cart",
-    "favorite",
-    "detail_menu"
-  ]
+    "openai_key": "",
+    "modules": [
+        "login",
+        "splash_screen",
+        "onboarding",
+        "register",
+        "main_navigation",
+        "home",
+        "menus",
+        "pesanan",
+        "profile",
+        "cart",
+        "favorite",
+        "detail_menu",
+        "pembayaran",
+        "detail_pesanan"
+    ]
 }

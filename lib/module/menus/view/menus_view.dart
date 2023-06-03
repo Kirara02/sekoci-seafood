@@ -29,7 +29,7 @@ class MenusView extends StatefulWidget {
                 const Text(
                   "Menu Sekoci Seafood",
                   style: TextStyle(
-                    fontSize: 16.0,
+                    fontSize: 18.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

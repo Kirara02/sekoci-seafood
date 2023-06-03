@@ -18,20 +18,24 @@ class OnboardingView extends StatefulWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Stack(
+                fit: StackFit.passthrough,
                 children: [
                   CarouselSlider(
                     items: [
                       Image.asset(
                         "assets/images/onboarding1.png",
                         fit: BoxFit.cover,
+                        width: double.infinity,
                       ),
                       Image.asset(
                         "assets/images/onboarding2.png",
                         fit: BoxFit.cover,
+                        width: double.infinity,
                       ),
                       Image.asset(
                         "assets/images/onboarding3.png",
                         fit: BoxFit.cover,
+                        width: double.infinity,
                       )
                     ],
                     options: CarouselOptions(
