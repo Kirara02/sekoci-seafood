@@ -9,8 +9,6 @@ class CartItem extends StatefulWidget {
   final String price;
   final String diskon;
   final String extra;
-  final VoidCallback? onPlus;
-  final VoidCallback? onMin;
   const CartItem({
     Key? key,
     required this.imgUrl,
@@ -18,8 +16,6 @@ class CartItem extends StatefulWidget {
     required this.price,
     required this.diskon,
     required this.extra,
-    this.onPlus,
-    this.onMin,
   }) : super(key: key);
 
   @override

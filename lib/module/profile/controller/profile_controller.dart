@@ -17,4 +17,16 @@ class ProfileController extends State<ProfileView> implements MvcController {
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
+
+  String selectedGender = 'Laki-laki';
+
+  TextEditingController namaController =
+      TextEditingController(text: 'John Doe');
+  TextEditingController jkController = TextEditingController(text: '');
+  TextEditingController nomorController =
+      TextEditingController(text: '081234567890');
+  TextEditingController emailController =
+      TextEditingController(text: 'johndoe@gmail.com');
+  TextEditingController alamatController = TextEditingController(
+      text: 'Jl. Moch. Hatta Nomor 02, Cipedes, Tasikmalaya.');
 }

@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Sekoci App",
+      title: "Sekoci Seafood",
       navigatorKey: Get.navigatorKey,
       theme: ThemeData(
         useMaterial3: true,

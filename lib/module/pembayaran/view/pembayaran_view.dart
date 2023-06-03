@@ -58,13 +58,13 @@ class PembayaranView extends StatefulWidget {
                 children: [
                   IconButton(
                     onPressed: () => Get.back(),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_back_ios_new,
                       color: blackColor,
                       size: 18,
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Pilih Pembayaran",
                     style: TextStyle(
                       fontSize: 18.0,

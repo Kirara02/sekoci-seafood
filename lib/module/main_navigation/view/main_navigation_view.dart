@@ -51,14 +51,11 @@ class MainNavigationView extends StatefulWidget {
         ),
         body: IndexedStack(
           index: controller.selectedIndex,
-          sizing: StackFit.expand,
           children: const [
             HomeView(),
             MenusView(),
             PesananView(),
             ProfileView(),
-            FavoriteView(),
-            CartView(),
           ],
         ),
         floatingActionButton: ClipOval(
@@ -76,7 +73,6 @@ class MainNavigationView extends StatefulWidget {
         resizeToAvoidBottomInset: false,
         extendBody: true,
         extendBodyBehindAppBar: true,
-        drawerEnableOpenDragGesture: false,
         bottomNavigationBar: ClipRRect(
           borderRadius: const BorderRadius.vertical(
             top: Radius.circular(12),
