@@ -62,13 +62,13 @@ class OnboardingView extends StatefulWidget {
                         ),
                         Container(
                           width: double.infinity,
-                          height: MediaQuery.of(context).size.height * 0.4,
-                          padding: const EdgeInsets.symmetric(vertical: 15),
+                          height: MediaQuery.of(context).size.height * 0.5,
+                          padding: const EdgeInsets.symmetric(vertical: 10),
                           decoration: const BoxDecoration(
                             color: whiteColor,
                           ),
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Padding(
                                 padding: const EdgeInsets.symmetric(

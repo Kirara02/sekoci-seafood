@@ -27,8 +27,10 @@ class _FavoriteCardState extends State<FavoriteCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
       width: double.infinity,
+      constraints: BoxConstraints(
+        minHeight: 100,
+      ),
       margin: const EdgeInsets.only(
         bottom: 10,
       ),

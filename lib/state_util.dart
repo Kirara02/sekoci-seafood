@@ -23,7 +23,6 @@ class Get {
       (Route<dynamic> route) => false,
     );
   }
-
   static double get width {
     return MediaQuery.of(currentContext).size.width;
   }

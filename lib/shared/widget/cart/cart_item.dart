@@ -28,7 +28,6 @@ class _CartItemState extends State<CartItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
       width: double.infinity,
       constraints: BoxConstraints(
         minHeight: 100,

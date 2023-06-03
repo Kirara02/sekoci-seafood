@@ -275,6 +275,9 @@ class ProfileView extends StatefulWidget {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),
